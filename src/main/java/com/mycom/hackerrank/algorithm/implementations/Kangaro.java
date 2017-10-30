@@ -3,8 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.implementations;
 
-import java.io.IOException;
-
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
 
 /**
@@ -16,7 +14,7 @@ public class Kangaro {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String f = "./samples/kangaroo.txt";
 		int[] ar = ReadFile.readFileInt(f, 0);
 		System.out.println(sameLocation(ar));

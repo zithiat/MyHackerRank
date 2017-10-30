@@ -3,7 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.implementations;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -20,7 +19,7 @@ public class BetweenTwoSets {
 	 * @param args
 	 * @throws IOException
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String f = "./samples/betweentwosets.txt";
 		int n = ReadFile.readFileInt(f, 0)[0];
 		int m = ReadFile.readFileInt(f, 0)[1];

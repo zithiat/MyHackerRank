@@ -3,8 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.warmups;
 
-import java.io.IOException;
-
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
 
 /**
@@ -17,15 +15,7 @@ public class DiagonalDifferences {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
-//		Scanner in = new Scanner(System.in);
-//		int n = in.nextInt();
-//		int[][] ar = new int[n][n];
-//		for (int i = 0; i < n; i++) {
-//			for (int j = 0; j < n; j++) {
-//				ar[i][j] = in.nextInt();
-//			}
-//		}
+	public static void main(String[] args) {
 		String f = "./samples/diagonaldiff.txt";
 		int n = ReadFile.readFileInt(f, 0)[0];
 		int[][] ar = new int[n][n];

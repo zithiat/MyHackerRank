@@ -3,7 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.warmups;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
@@ -18,7 +17,7 @@ public class MinMaxSum {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String f = "./samples/minmaxsum.txt";
 		int[] ar = ReadFile.readFileInt(f, 0);
 		long[] result = minMaxSum(ar);

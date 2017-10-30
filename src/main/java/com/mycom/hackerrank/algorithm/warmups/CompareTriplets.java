@@ -3,8 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.warmups;
 
-import java.io.IOException;
-
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
 
 /**
@@ -17,7 +15,7 @@ public class CompareTriplets {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String fileName = "./samples/comparetriplets.txt";
 		int[] a = ReadFile.readFileInt(fileName, 0);
 		int[] b = ReadFile.readFileInt(fileName, 1);

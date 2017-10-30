@@ -3,8 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.warmups;
 
-import java.io.IOException;
-
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
 
 /**
@@ -17,7 +15,7 @@ public class SolveMeFirst {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String fName = "./samples/solvemefirst_sample.txt";
 		int a = ReadFile.readFileInt(fName, 0)[0];
 		int b = ReadFile.readFileInt(fName, 1)[0];

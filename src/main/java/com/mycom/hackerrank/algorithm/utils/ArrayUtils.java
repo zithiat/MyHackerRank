@@ -8,6 +8,12 @@ import java.util.Collection;
  *
  */
 public class ArrayUtils {
+	
+	/**
+	 * Convert from an Integer Collection to integer array
+	 * @param data
+	 * @return
+	 */
 	public static int[] intToIntArray(final Collection<Integer> data) {
 		int[] result;
 		// null result for null input
@@ -38,6 +44,11 @@ public class ArrayUtils {
 		return result;
 	}
 	
+	/**
+	 * Convert from an Integer collection to long array
+	 * @param data
+	 * @return
+	 */
 	public static long[] intToLongArray(final Collection<Integer> data) {
 		long[] result;
 		// null result for null input
@@ -68,6 +79,11 @@ public class ArrayUtils {
 		return result;
 	}
 	
+	/**
+	 * Convert from a Long collection to long array
+	 * @param data
+	 * @return
+	 */
 	public static long[] longToLongArray(final Collection<Long> data) {
 		long[] result;
 		// null result for null input

@@ -3,7 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.warmups;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
@@ -18,7 +17,7 @@ public class BirthdayCakeCandles {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String f = "./samples/birthdaycakecandles.txt";
 		int n = ReadFile.readFileInt(f, 0)[0];
 		int[] ar = ReadFile.readFileInt(f, 1);

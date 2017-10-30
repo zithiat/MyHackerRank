@@ -3,8 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.warmups;
 
-import java.io.IOException;
-
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
 
 /**
@@ -17,7 +15,7 @@ public class Staircase {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		String f = "./samples/staircase.txt";
 		int n = ReadFile.readFileInt(f, 0)[0];
 		drawStaircase(n);

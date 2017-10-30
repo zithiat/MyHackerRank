@@ -3,8 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.implementations;
 
-import java.io.IOException;
-
 import com.mycom.hackerrank.algorithm.utils.ReadFile;
 
 /**
@@ -13,7 +11,7 @@ import com.mycom.hackerrank.algorithm.utils.ReadFile;
  */
 public class GradingStudents {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		String fName = "./samples/gradingstudents_sample.txt";
 		int n = ReadFile.readFileInt(fName, 0)[0];
 		int[] arr = new int[n];

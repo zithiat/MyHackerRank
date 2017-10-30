@@ -3,7 +3,6 @@
  */
 package com.mycom.hackerrank.algorithm.searches;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -19,7 +18,7 @@ public class MinimumLoss {
 	 * @param args
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		/*
 		Scanner in = new Scanner(System.in);
         int n = in.nextInt();
