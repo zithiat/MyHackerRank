@@ -40,6 +40,7 @@ public class ReadFile {
 			}
 			// Close the input stream
 			br.close();
+			fstream.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -120,6 +120,11 @@ public class ArrayUtils {
 		return result;
 	}
 
+	/**
+	 * To sort a Map by value
+	 * @param unsortMap
+	 * @return
+	 */
 	public static <K, V extends Comparable<? super V>> Map<K, V> sortByValue(Map<K, V> unsortMap) {
 		List<Map.Entry<K, V>> list = new LinkedList<Map.Entry<K, V>>(unsortMap.entrySet());
 		Collections.sort(list, new Comparator<Map.Entry<K, V>>() {
@@ -133,5 +138,58 @@ public class ArrayUtils {
 		}
 		return result;
 	}
-
+	
+	/**
+	 * To convert int array to Integer array
+	 * @param ids
+	 * @return
+	 */
+	public static Integer[] toConvertInteger(int[] ids) {
+		Integer[] newArray = new Integer[ids.length];
+		for (int i = 0; i < ids.length; i++) {
+			newArray[i] = Integer.valueOf(ids[i]);
+		}
+		return newArray;
+	}
+	
+	/**
+	 * To convert from Integer array to int array
+	 * @param WrapperArray
+	 * @return
+	 */
+	public static int[] toint(Integer[] WrapperArray) {
+		int[] newArray = new int[WrapperArray.length];
+		for (int i = 0; i < WrapperArray.length; i++) {
+			newArray[i] = WrapperArray[i].intValue();
+		}
+		return newArray;
+	}
+	
+	/**
+	 * Binary search in array
+	 * @param s
+	 * @param start
+	 * @param end
+	 * @param alice
+	 * @return
+	 */
+	public static int binarySearch(int[] s, int start, int end, int value) {
+		if (value < s[end]) {
+			return -1;
+		}
+		if (value >= s[start]) {
+			return 0;
+		}
+		if (end - start <= 1) {
+			return end;
+		}
+		int mid = (start + end) / 2;
+		if (s[mid] < value) {
+			return binarySearch(s, start, mid, value);
+		} else if (s[mid] == value) {
+			return mid;
+		} else {
+			return binarySearch(s, mid, end, value);
+		}
+    }
 }
