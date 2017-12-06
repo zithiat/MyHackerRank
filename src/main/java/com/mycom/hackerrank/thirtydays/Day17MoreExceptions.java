@@ -28,7 +28,7 @@ n and p should be non-negative
         
             int n = in.nextInt();
             int p = in.nextInt();
-            Calculator myCalculator = new Calculator();
+            Day17Calculator myCalculator = new Day17Calculator();
             try {
                 int ans = myCalculator.power(n, p);
                 System.out.println(ans);
@@ -42,7 +42,7 @@ n and p should be non-negative
 
 }
 
-class Calculator {
+class Day17Calculator {
 	public int power(int n, int p) throws Exception {
 		if (n < 0 || p < 0) {
 			throw new Exception("n and p should be non-negative");

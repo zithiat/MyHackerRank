@@ -11,8 +11,6 @@ import com.mycom.hackerrank.algorithm.utils.ReadFile;
  */
 public class TrainingTheArmy {
 
-	
-	
 	/**
 	 * @param args
 	 */
@@ -23,6 +21,5 @@ public class TrainingTheArmy {
 		int[] c = ReadFile.readFileInt(f, 1);
 		int[] a = ReadFile.readFileInt(f, 2);
 		int[] b = ReadFile.readFileInt(f, 3);
-		
 	}
 }
